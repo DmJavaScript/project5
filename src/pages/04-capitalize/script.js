@@ -12,10 +12,10 @@ function capitalize(str) {
     splitedArray.forEach((e, i) => splitedArray[i] = splitedArray[i].charAt(0).toUpperCase() + splitedArray[i].substr(1));
     return splitedArray.join(' ');
 }
-
-
+window.capitalize = capitalize; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
+
 console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
 
 

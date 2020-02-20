@@ -18,7 +18,7 @@ function palindrome(str) {
     const wordTwo = wordOne.split('').reverse().join('');
     return wordOne === wordTwo;
 }
-
+window.palindrome = palindrome;
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(palindrome('топот')); // должно быть true

@@ -10,6 +10,7 @@
 function uniq(arr) {
     return arr.filter((value, index, self) => self.indexOf(value) === index);
 }
+window.uniq = uniq; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

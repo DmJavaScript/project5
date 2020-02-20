@@ -12,6 +12,7 @@ function reverseWords(str) {
     const splitedArray = str.replace('/[\w\s]/g', '').split(' ');
     return splitedArray.reverse().join(' ');
 }
+window.reverseWords = reverseWords; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

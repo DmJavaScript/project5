@@ -12,6 +12,7 @@ function intersection(arr1, arr2) {
     const uniq = findedDuplicates.filter((value, index, self) => self.indexOf(value) === index);
     return uniq;
 }
+window.intersection = intersection; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

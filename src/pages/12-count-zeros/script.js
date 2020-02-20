@@ -14,6 +14,7 @@ function countZeros(n) {
     const onlyZeros = createdArray.join('').replace(/[^0]/g, '');
     return onlyZeros.length;
 }
+window.countZeros = countZeros; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

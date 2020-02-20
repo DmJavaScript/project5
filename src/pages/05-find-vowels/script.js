@@ -14,6 +14,7 @@ function findVowels(str) {
     const lettersDuplicate = lettersArray.filter(e => str.toLowerCase().split('').includes(e));
     return lettersDuplicate.length;
 }
+window.findVowels = findVowels; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

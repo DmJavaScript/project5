@@ -14,6 +14,8 @@ function anagram(str1, str2) {
     return finalString(str1) === finalString(str2);
 }
 
+window.anagram = anagram; //для вебпака передаю область видимости функции для других скриптов на этой странице
+
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('finder', 'Friend')); // true

@@ -17,6 +17,7 @@ function sumOfTwo(arr, sum) {
     filtered(arr).forEach((e)  =>  template.push(sum - e));
     return filtered(arr).join() === filtered(template).reverse().join();
 }
+window.sumOfTwo = sumOfTwo; //для вебпака передаю область видимости функции для других скриптов на этой странице
 
 
 console.log(sumOfTwo([1, 2, 3, 4, 5],  4)); // true (так как 1 + 3 === 4)
